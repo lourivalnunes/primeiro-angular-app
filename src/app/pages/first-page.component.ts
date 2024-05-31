@@ -5,5 +5,6 @@ import { Component } from "@angular/core";
     templateUrl:'./first-page.component.html'
 })
 export class FirstPageComponent {
-    
+    btnDisabled = true
+    name ='Teste de name' 
 }
