@@ -1,4 +1,22 @@
 <h1>Testando as rotas do angular para navegação</h1>
 
-<button type="button" [disabled]="btnDisabled" (click)="mostrarValor()">Teste de botão</button> <br/>
+<button type="button" [disabled]="btnDisabled" (click)="mostrarValor()">Teste de botão</button> <br/><br/>
+
+<div>
+    <button (click)="trocarBotao()">Clique nesse botão</button>
+</div>
+
+<div *ngIf="botaoClicado" style="color: red;">
+    O botão foi clicado
+</div>
+
+<input type="text" [(ngModel)]="novoItem" placeholder="Adicionar um novo item">
+<P>{{novoItem}}</P>
+<button (click)="adicionarItem">Adicionar item</button>
+
+<ul>
+    <li *ngFor="let item of items">
+    {{item.name}}
+    </li>
+</ul>
 
